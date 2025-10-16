@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F060FC2C2E9F1999005E011C /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = F060FC2B2E9F1999005E011C /* SVGKit */; };
+		F060FC2E2E9F1999005E011C /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F060FC2D2E9F1999005E011C /* SVGKitSwift */; };
+		F060FC392E9F23A4005E011C /* Coding.gif in Resources */ = {isa = PBXBuildFile; fileRef = F060FC382E9F23A4005E011C /* Coding.gif */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F060FBE32E9F0E27005E011C /* PortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F060FC382E9F23A4005E011C /* Coding.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Coding.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F060FC2E2E9F1999005E011C /* SVGKitSwift in Frameworks */,
+				F060FC2C2E9F1999005E011C /* SVGKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +43,7 @@
 			children = (
 				F060FBE52E9F0E27005E011C /* PortfolioApp */,
 				F060FBE42E9F0E27005E011C /* Products */,
+				F060FC382E9F23A4005E011C /* Coding.gif */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +75,8 @@
 			);
 			name = PortfolioApp;
 			packageProductDependencies = (
+				F060FC2B2E9F1999005E011C /* SVGKit */,
+				F060FC2D2E9F1999005E011C /* SVGKitSwift */,
 			);
 			productName = PortfolioApp;
 			productReference = F060FBE32E9F0E27005E011C /* PortfolioApp.app */;
@@ -94,6 +106,9 @@
 			);
 			mainGroup = F060FBDA2E9F0E27005E011C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F060FC2A2E9F1999005E011C /* XCRemoteSwiftPackageReference "SVGKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F060FBE42E9F0E27005E011C /* Products */;
 			projectDirPath = "";
@@ -109,6 +124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F060FC392E9F23A4005E011C /* Coding.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +193,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -234,7 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -251,6 +267,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HW6Z572RLK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -282,6 +299,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HW6Z572RLK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -328,6 +346,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F060FC2A2E9F1999005E011C /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F060FC2B2E9F1999005E011C /* SVGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F060FC2A2E9F1999005E011C /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKit;
+		};
+		F060FC2D2E9F1999005E011C /* SVGKitSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F060FC2A2E9F1999005E011C /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKitSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F060FBDB2E9F0E27005E011C /* Project object */;
 }
